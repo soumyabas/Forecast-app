@@ -24,3 +24,8 @@ button {
   border-radius: 5px;
   background: rgb(170, 170, 170);
 }
+
+a {
+  font-style: italic;
+  font-weight: medium;
+}
