@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style">
 </head>
 
 <body>
@@ -15,125 +16,126 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-5">
         <h1 class="weather">FORECAST</h1>
       </div>
-      <div class="col-6">
+      <div class="col-3">
         <form id="city-name">
-          <input type="text" placeholder="enter name of the city" autocomplete= "off" autofocus ="on" id= "search-city" />
-          <input type="submit"  value = "Search"/>
+          <input type="text" placeholder="enter name of the city" autocomplete="off" autofocus="on" id="search-city" />
+          <input type="submit" value="Search" />
         </form>
-
-        <button id = "gps-Location"> 
-         📌
+      </div>
+      <div class="col-4">
+        <button id="gps-Location">
+          📌
         </button>
-       
       </div>
-   
 
-    <div class="row">
-      <div class="col-6">
-        <div class="card text-white bg-primary mb-3" style="max-width: 60rem;">
-          <h3 class="card-header" id = "cityName" >Denholme</h3>
-          <div class="card-body">
 
-            <div class="row">
-              <div class="col-2">
-                <h2 class="card-title" id = "degrees">7°</h2>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="card text-white bg-primary mb-3" style="max-width: 60rem;">
+            <h3 class="card-header" id="cityName">Denholme</h3>
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col-2">
+                  <h2 class="card-title" id="degrees">7°</h2>
+                </div>
+                <div class="col-4" id="chooseUnits">
+                  <h5 class="unit" id="firstUnit">C°</h5>
+                  <h5 class="unitTwo" id="secondUnit">/F°</h5>
+                </div>
+                <div class="col-4">
+                  <h7 class="attribute"> Light cloud and a moderate breeze</h7>
+                </div>
+                <br>
+                <h3 class="card-text" id="today">Day Today</h3>
+
               </div>
-              <div class="col-4" id= "chooseUnits">
-                <h5 class="unit" id ="firstUnit" >C°</h5>
-                <h5 class="unitTwo" id="secondUnit">/F°</h5>
-              </div>
-              <div class="col-4">
-                <h7 class="attribute"> Light cloud and a moderate breeze</h7>
-              </div>
-              <br>
-              <h3 class="card-text" id = "today" >Day Today</h3>
-              
+
             </div>
-
           </div>
         </div>
-      </div>
 
-      <div class="col-6">
-        <div class="card text-white bg-secondary mb-3" style="max-width: 18.5rem;">
-          <div class="card-body">
-            <h5 class="condition 1">Precipitation: 70%</h5>
-            <h5 class="condition 2">Humidity: 93%</h5>
-            <h5 class="condition 3">Visibility: okay</h5>
-            <h1 class="weather-emoji">☁</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-6">
-        <div class="card text-white bg-primary mb-3" style="max-width: 50rem;">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-2">
-                <h5 class="card-title">Tue</h5>
-
-                </br>
-
-                <p class="card-text">0°</p>
-                </br>
-                <h4 class="day-emoji">☁</h4>
-              </div>
-
-              <div class="col-2">
-                <h5 class="card-title">Wed</h5>
-                </br>
-                <p class="card-text">1°</p>
-                <br>
-                <h4 class="da-emoji">⛅</h4>
-              </div>
-
-              <div class="col-2">
-                <h5 class="card-title">Thr</h5>
-                <br>
-                <p class="card-text">3°</p>
-                <br>
-                <h4 class="da-emoji">🌧</h4>
-              </div>
-              <div class="col-2">
-                <h5 class="card-title">Fri</h5>
-                <br>
-                <p class="card-text">9°</p>
-                <br>
-                <h4 class="da-emoji">🌤</h4>
-              </div>
-              <div class="col-2">
-                <h5 class="card-title">Sat</h5>
-                <br>
-                <p class="card-text">12°</p>
-                <br>
-                <h4 class="da-emoji">🌞</h4>
-              </div>
-              <div class="col-2">
-                <h5 class="card-title">Sun</h5>
-                <br>
-                <p class="card-text">5°</p>
-                <br>
-                <h4 class="da-emoji">☁</h4>
-              </div>
+        <div class="col-6">
+          <div class="card text-white bg-secondary mb-3" style="max-width: 18.5rem;">
+            <div class="card-body">
+              <h5 class="condition 1">Precipitation: 70%</h5>
+              <h5 class="condition 2">Humidity: 93%</h5>
+              <h5 class="condition 3">Visibility: okay</h5>
+              <h1 class="weather-emoji">☁</h1>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-6">
-        <img
-          src="https://images.unsplash.com/photo-1592601250984-da0dc45e25f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80"
-          alt="mood setter" width="300px">
+
+      <div class="row">
+        <div class="col-6">
+          <div class="card text-white bg-primary mb-3" style="max-width: 50rem;">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h5 class="card-title">Tue</h5>
+
+                  </br>
+
+                  <p class="card-text">0°</p>
+                  </br>
+                  <h4 class="day-emoji">☁</h4>
+                </div>
+
+                <div class="col-2">
+                  <h5 class="card-title">Wed</h5>
+                  </br>
+                  <p class="card-text">1°</p>
+                  <br>
+                  <h4 class="da-emoji">⛅</h4>
+                </div>
+
+                <div class="col-2">
+                  <h5 class="card-title">Thr</h5>
+                  <br>
+                  <p class="card-text">3°</p>
+                  <br>
+                  <h4 class="da-emoji">🌧</h4>
+                </div>
+                <div class="col-2">
+                  <h5 class="card-title">Fri</h5>
+                  <br>
+                  <p class="card-text">9°</p>
+                  <br>
+                  <h4 class="da-emoji">🌤</h4>
+                </div>
+                <div class="col-2">
+                  <h5 class="card-title">Sat</h5>
+                  <br>
+                  <p class="card-text">12°</p>
+                  <br>
+                  <h4 class="da-emoji">🌞</h4>
+                </div>
+                <div class="col-2">
+                  <h5 class="card-title">Sun</h5>
+                  <br>
+                  <p class="card-text">5°</p>
+                  <br>
+                  <h4 class="da-emoji">☁</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img
+            src="https://images.unsplash.com/photo-1592601250984-da0dc45e25f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80"
+            alt="mood setter" width="300px">
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>Coded by Soumya Basnet</footer>
-<script src="index.js"></script>
+    <footer>Coded by Soumya Basnet</footer>
+    <script src="index.js"></script>
 
 </body>
 

@@ -1,6 +1,9 @@
 h1 {
   text-align: left;
   margin: 0;
+  font-family: sans-serif;
+  font-weight: medium;
+  font-size: 60px;
 }
 body {
   font-family: sans-serif;
