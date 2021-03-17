@@ -15,57 +15,68 @@
 
 
   <div class="container">
+    <div class="weather-app">
     <div class="row">
-      <div class="col-5">
+      <div class="col-6">
         <h1 class="weather">FORECAST</h1>
       </div>
-      <div class="col-3">
+      <div class="col-6">
         <form id="city-name">
           <input type="text" placeholder="enter name of the city" autocomplete="off" autofocus="on" id="search-city" />
           <input type="submit" value="Search" />
-        </form>
-      </div>
-      <div class="col-4">
+            <span>
         <button id="gps-Location">
           📌
         </button>
+      </span>   
+        </form> 
       </div>
-
-
 
       <div class="row">
         <div class="col-6">
-          <div class="card text-white bg-primary mb-3" style="max-width: 60rem;">
-            <h3 class="card-header" id="cityName">Denholme</h3>
+          <div class="card text-grey bg-none mb-0";>
             <div class="card-body">
+            <h2 id="cityName">Denholme</h2>
+            <h5> 
+              <span id="day">Tuesday</span> 
+              <span id= "hours">15</span>:<span id = "minutes">00 </span>
+            </h5>
+            
 
               <div class="row">
-                <div class="col-2">
-                  <h2 class="card-title" id="degrees">7°</h2>
-                </div>
-                <div class="col-4" id="chooseUnits">
-                  <h5 class="unit" id="firstUnit">C°</h5>
-                  <h5 class="unitTwo" id="secondUnit">/F°</h5>
-                </div>
+                <div class="class col-md-2">
+                 <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="sunny">
+                 </div>
+
                 <div class="col-4">
-                  <h7 class="attribute"> Light cloud and a moderate breeze</h7>
+                  <h1 class="temp" id="degrees">7°</h1>
                 </div>
-                <br>
-                <h3 class="card-text" id="today">Day Today</h3>
-
+                <div class="col-3" id="chooseUnits">
+                  <a href=" " id= "celsius" class = "c-temp">C°</a> /
+                  <a href=" " id= "farenheit"  class = "f-temp">F°</a>
+                </div>
+                <div class="col-3">
+                  <h7 class="attribute" id="description"> Light cloud and sunny</h7>
+                </div>
               </div>
-
             </div>
           </div>
         </div>
 
-        <div class="col-6">
-          <div class="card text-white bg-secondary mb-3" style="max-width: 18.5rem;">
+        <div class="col-4">
+          <div class="card text-grey";>
             <div class="card-body">
-              <h5 class="condition 1">Precipitation: 70%</h5>
-              <h5 class="condition 2">Humidity: 93%</h5>
-              <h5 class="condition 3">Visibility: okay</h5>
-              <h1 class="weather-emoji">☁</h1>
+              <ul>
+                <li>
+              Wind: <span id="wind-speed">2</span> km/hr
+               </li>
+               <li >   
+                 Humidity: <span id="humidity-element"> 93</span> % 
+              </li>
+              <li>
+                Visibility: <span id="visibility-element"> okay </span>
+              </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -73,7 +84,7 @@
 
       <div class="row">
         <div class="col-6">
-          <div class="card text-white bg-primary mb-3" style="max-width: 50rem;">
+          <div class="card text-white bg-primary mb-3" >
             <div class="card-body">
               <div class="row">
                 <div class="col-2">
@@ -128,13 +139,15 @@
         </div>
         <div class="col-6">
           <img class="mood"
-            src="https://images.unsplash.com/photo-1592601250984-da0dc45e25f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80"
-            alt="mood setter" width="300px" >
+            src="https://images.photowall.com/products/44478/sunny-sky.jpg?h=699&q=85"
+            alt="mood setter" width="400px" >
+        </div>
         </div>
       </div>
+      
     </div>
 
-    <footer><a href="https://github.com/soumyabas/Forecast-app">Open source-code</a> 
+    <footer><a href="https://github.com/soumyabas/Forecast-app" class= "link">Open source-code</a> 
       by Soumya Basnet</footer>
     <script src="script.js"></script>
 

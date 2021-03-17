@@ -10,21 +10,41 @@ function search(event) {
   displayWeather(currentCity.value);
 }
 
+function showTemp(response) {
+
+  let tempNow = document.querySelector("#degrees");
+  tempNow.innerHTML = Math.round(response.data.main.temp);
+
+  let attribute = document.querySelector("#description");
+  attribute.innerHTML = response.data.weather[0].description;
+
+  let humidity = document.querySelector("#humidity-element");
+  humidity.innerHTML = response.data.main.humidity;
+
+  let speed = document.querySelector("#wind-speed");
+  speed.innerHTML = Math.round(response.data.wind.speed);
+
+}
+
 function displayWeather(city) {
-  console.log(city);
   let apiKey = "e12d4984bdb9b1f3003f6782997bbdc8";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+
+  console.log(apiUrl);
   axios.get(`${apiUrl}`).then(showTemp);
 }
 
-function showTemp(response) {
-  let currentTemp = Math.round(response.data.main.temp);
-  let tempNow = document.querySelector("#degrees");
-  tempNow.innerHTML = `${currentTemp}°`;
 
-}
 let form = document.querySelector("#city-name");
 form.addEventListener("submit", search);
+
+
+
+
+
+
+
+
 
 
 
@@ -43,13 +63,23 @@ function showLocation(position) {
 
 
 function showTempNow(response) {
-  let cityHere = (response.data.name);
   let cityHereNow = document.querySelector("#cityName");
-  cityHereNow.innerHTML = `${cityHere}`;
+  cityHereNow.innerHTML = response.data.name;
 
-  let tempHere = Math.round(response.data.main.temp);
   let tempHereNow = document.querySelector("#degrees");
-  tempHereNow.innerHTML = `${tempHere}°`
+  tempHereNow.innerHTML = Math.round(response.data.main.temp);
+
+  let attributeNow = document.querySelector("#description");
+  attributeNow.innerHTML = response.data.weather[0].description;
+
+  let humidityNow = document.querySelector("#humidity-element");
+  humidityNow.innerHTML = response.data.main.humidity;
+
+  let windHereNow = document.querySelector("#wind-speed");
+  windHereNow.innerHTML = Math.round(response.data.wind.speed);
+
+
+
 }
 
 

@@ -1,22 +1,29 @@
-h1 {
-  text-align: left;
-  margin: 0;
-  font-family: sans-serif;
-  font-weight: medium;
-  font-size: 50px;
-}
 body {
   font-family: sans-serif;
-  padding: 0 20px;
+  margin: 10px;
+  background-size: 100px;
+}
+
+
+h1 {
+  text-align: left;
+  margin:10px;
+  padding: 10px, 10px, 10px, 10px;
+  font-size: 50px;
+  color: #e7e7e7;
+}
+
+h2{
+  text-align: left;
+  font-weight: medium;
+}
+h5{
+  font-weight: medium;
 }
 
 footer {
-  font-family: sans-serif;
+
   text-align: left;
-}
-.mood {
-  border-style: none;
-  border-radius: 10px;
 }
 
 button {
@@ -25,7 +32,46 @@ button {
   background: rgb(170, 170, 170);
 }
 
-a {
+ul{
+  text-align:right ;
+  list-style-type: none;
+  text-transform: capitalize;
+  font-size: 17px;
+
+}
+
+.weather-app{
+  max-width: 1000px;
+}
+
+.temp{
+  color: rgb(0, 0, 0);
+  
+}
+
+.mood {
+  border-style: none;
+  border-radius: 10px;
+}
+
+.c-temp {
+  text-decoration: none;
+ font-weight: bold ;
+ color: black;
+  font-size: 20px;
+}
+.f-temp {
+  text-decoration: none;
+ font-weight: bold ;
+ color: rgb(1, 146, 190);
+ font-size: 20px;
+}
+.attribute {
+  text-transform: capitalize;
+  font-weight: medium;
+}
+
+.link {
   font-style: italic;
   font-weight: medium;
 }
