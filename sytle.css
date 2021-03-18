@@ -35,11 +35,12 @@ button {
 ul{
   text-align:right ;
   list-style-type: none;
-  text-transform: capitalize;
   font-size: 17px;
 
 }
-
+ul :first-letter{
+text-transform: capitalize;
+}
 .weather-app{
   max-width: 1000px;
 }

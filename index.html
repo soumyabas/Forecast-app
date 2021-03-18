@@ -16,138 +16,136 @@
 
   <div class="container">
     <div class="weather-app">
-    <div class="row">
-      <div class="col-6">
-        <h1 class="weather">FORECAST</h1>
-      </div>
-      <div class="col-6">
-        <form id="city-name">
-          <input type="text" placeholder="enter name of the city" autocomplete="off" autofocus="on" id="search-city" />
-          <input type="submit" value="Search" />
+      <div class="row">
+        <div class="col-6">
+          <h1 class="weather">FORECAST</h1>
+        </div>
+        <div class="col-6">
+          <form id="city-name">
+            <input type="text" placeholder="enter name of the city" autocomplete="off" autofocus="on"
+              id="search-city" />
+            <input type="submit" value="Search" />
             <span>
-        <button id="gps-Location">
-          📌
-        </button>
-      </span>   
-        </form> 
-      </div>
+              <button id="gps-Location">
+                📌
+              </button>
+            </span>
+          </form>
+        </div>
 
-      <div class="row">
-        <div class="col-6">
-          <div class="card text-grey bg-none mb-0";>
-            <div class="card-body">
-            <h2 id="cityName">Denholme</h2>
-            <h5> 
-              <span id="day">Tuesday</span> 
-              <span id= "hours">15</span>:<span id = "minutes">00 </span>
-            </h5>
-            
+        <div class="row">
+          <div class="col-6">
+            <div class="card text-grey bg-none mb-0" ;>
+              <div class="card-body">
+                <h2 id="cityName">Denholme</h2>
+                <h5 id = "date">Tuesday 15:00 
+                </h5>
 
-              <div class="row">
-                <div class="class col-md-2">
-                 <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="sunny">
-                 </div>
 
-                <div class="col-4">
-                  <h1 class="temp" id="degrees">7°</h1>
+                <div class="row">
+                  <div class="class col-md-2">
+                    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="sunny">
+                  </div>
+
+                  <div class="col-4">
+                    <h1 class="temp" id="degrees">7°</h1>
+                  </div>
+                  <div class="col-3" id="chooseUnits">
+                    <a href=" " id="celsius" class="c-temp">C°</a> /
+                    <a href=" " id="farenheit" class="f-temp">F°</a>
+                  </div>
+                  <div class="col-3">
+                    <h7 class="attribute" id="description"> Light cloud and sunny</h7>
+                  </div>
                 </div>
-                <div class="col-3" id="chooseUnits">
-                  <a href=" " id= "celsius" class = "c-temp">C°</a> /
-                  <a href=" " id= "farenheit"  class = "f-temp">F°</a>
-                </div>
-                <div class="col-3">
-                  <h7 class="attribute" id="description"> Light cloud and sunny</h7>
-                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card text-grey" ;>
+              <div class="card-body">
+                <ul>
+                  <li>
+                    Wind: <span id="wind-speed">2</span> km/hr
+                  </li>
+                  <li>
+                    Humidity: <span id="humidity-element"> 93</span> %
+                  </li>
+                  <li>
+                    Visibility: <span id="visibility-element"> okay </span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-4">
-          <div class="card text-grey";>
-            <div class="card-body">
-              <ul>
-                <li>
-              Wind: <span id="wind-speed">2</span> km/hr
-               </li>
-               <li >   
-                 Humidity: <span id="humidity-element"> 93</span> % 
-              </li>
-              <li>
-                Visibility: <span id="visibility-element"> okay </span>
-              </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="card text-white bg-primary mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-2">
+                    <h5 class="card-title">Tue</h5>
 
-      <div class="row">
-        <div class="col-6">
-          <div class="card text-white bg-primary mb-3" >
-            <div class="card-body">
-              <div class="row">
-                <div class="col-2">
-                  <h5 class="card-title">Tue</h5>
+                    </br>
 
-                  </br>
+                    <p class="card-text">0°</p>
+                    </br>
+                    <h4 class="day-emoji">☁</h4>
+                  </div>
 
-                  <p class="card-text">0°</p>
-                  </br>
-                  <h4 class="day-emoji">☁</h4>
-                </div>
+                  <div class="col-2">
+                    <h5 class="card-title">Wed</h5>
+                    </br>
+                    <p class="card-text">1°</p>
+                    <br>
+                    <h4 class="da-emoji">⛅</h4>
+                  </div>
 
-                <div class="col-2">
-                  <h5 class="card-title">Wed</h5>
-                  </br>
-                  <p class="card-text">1°</p>
-                  <br>
-                  <h4 class="da-emoji">⛅</h4>
-                </div>
-
-                <div class="col-2">
-                  <h5 class="card-title">Thr</h5>
-                  <br>
-                  <p class="card-text">3°</p>
-                  <br>
-                  <h4 class="da-emoji">🌧</h4>
-                </div>
-                <div class="col-2">
-                  <h5 class="card-title">Fri</h5>
-                  <br>
-                  <p class="card-text">9°</p>
-                  <br>
-                  <h4 class="da-emoji">🌤</h4>
-                </div>
-                <div class="col-2">
-                  <h5 class="card-title">Sat</h5>
-                  <br>
-                  <p class="card-text">12°</p>
-                  <br>
-                  <h4 class="da-emoji">🌞</h4>
-                </div>
-                <div class="col-2">
-                  <h5 class="card-title">Sun</h5>
-                  <br>
-                  <p class="card-text">5°</p>
-                  <br>
-                  <h4 class="da-emoji">☁</h4>
+                  <div class="col-2">
+                    <h5 class="card-title">Thr</h5>
+                    <br>
+                    <p class="card-text">3°</p>
+                    <br>
+                    <h4 class="da-emoji">🌧</h4>
+                  </div>
+                  <div class="col-2">
+                    <h5 class="card-title">Fri</h5>
+                    <br>
+                    <p class="card-text">9°</p>
+                    <br>
+                    <h4 class="da-emoji">🌤</h4>
+                  </div>
+                  <div class="col-2">
+                    <h5 class="card-title">Sat</h5>
+                    <br>
+                    <p class="card-text">12°</p>
+                    <br>
+                    <h4 class="da-emoji">🌞</h4>
+                  </div>
+                  <div class="col-2">
+                    <h5 class="card-title">Sun</h5>
+                    <br>
+                    <p class="card-text">5°</p>
+                    <br>
+                    <h4 class="da-emoji">☁</h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-6">
-          <img class="mood"
-            src="https://images.photowall.com/products/44478/sunny-sky.jpg?h=699&q=85"
-            alt="mood setter" width="400px" >
-        </div>
+          <div class="col-6">
+            <img class="mood" src="https://images.photowall.com/products/44478/sunny-sky.jpg?h=699&q=85"
+              alt="mood setter" width="400px">
+          </div>
         </div>
       </div>
-      
+
     </div>
 
-    <footer><a href="https://github.com/soumyabas/Forecast-app" class= "link">Open source-code</a> 
+    <footer><a href="https://github.com/soumyabas/Forecast-app" class="link">Open source-code</a>
       by Soumya Basnet</footer>
     <script src="script.js"></script>
 
