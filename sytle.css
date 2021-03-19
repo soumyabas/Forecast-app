@@ -4,25 +4,23 @@ body {
   background-size: 100px;
 }
 
-
 h1 {
   text-align: left;
-  margin:10px;
+  margin: 10px;
   padding: 10px, 10px, 10px, 10px;
   font-size: 50px;
   color: #e7e7e7;
 }
 
-h2{
+h2 {
   text-align: left;
   font-weight: medium;
 }
-h5{
+h5 {
   font-weight: medium;
 }
 
 footer {
-
   text-align: left;
 }
 
@@ -32,22 +30,20 @@ button {
   background: rgb(170, 170, 170);
 }
 
-ul{
-  text-align:right ;
+ul {
+  text-align: right;
   list-style-type: none;
   font-size: 17px;
-
 }
-ul :first-letter{
-text-transform: capitalize;
+ul :first-letter {
+  text-transform: capitalize;
 }
-.weather-app{
+.weather-app {
   max-width: 1000px;
 }
 
-.temp{
+.temp {
   color: rgb(0, 0, 0);
-  
 }
 
 .mood {
@@ -55,17 +51,22 @@ text-transform: capitalize;
   border-radius: 10px;
 }
 
-.c-temp {
+.celsius-temp {
   text-decoration: none;
- font-weight: bold ;
- color: black;
+  font-weight: bold;
+  color: black;
   font-size: 20px;
 }
-.f-temp {
+
+.celsius-temp:hover {
+  cursor: default;
+}
+
+.farenheit-temp {
   text-decoration: none;
- font-weight: bold ;
- color: rgb(1, 146, 190);
- font-size: 20px;
+  font-weight: bold;
+  color: rgb(1, 146, 190);
+  font-size: 20px;
 }
 .attribute {
   text-transform: capitalize;

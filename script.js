@@ -1,6 +1,5 @@
 
 function formatDate(timestamp) {
-
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
@@ -27,10 +26,13 @@ function search(event) {
   displayWeather(currentCity.value);
 }
 
+
 function showTemp(response) {
 
+  celsiusTemperature = response.data.main.temp;
+
   let tempNow = document.querySelector("#degrees");
-  tempNow.innerHTML = Math.round(response.data.main.temp);
+  tempNow.innerHTML = Math.round(celsiusTemperature);
 
   let attribute = document.querySelector("#description");
   attribute.innerHTML = response.data.weather[0].description;
@@ -44,8 +46,23 @@ function showTemp(response) {
   let dateNow = document.querySelector("#date");
   dateNow.innerHTML = formatDate(response.data.dt * 1000);
 
+
+
 }
 
+
+function displayfarenheit(event) {
+  event.preventDefault();
+  let farenheitNow = document.querySelector("#degrees");
+  let farenheitTempNow = (celsiusTemperature * 9) / 5 + 32;
+  farenheitNow.innerHTML = Math.round(farenheitTempNow);
+}
+
+function displaycelsius(event) {
+  event.preventDefault();
+  let tempNow = document.querySelector("#degrees");
+  tempNow.innerHTML = Math.round(celsiusTemperature);
+}
 
 function displayWeather(city) {
   let apiKey = "e12d4984bdb9b1f3003f6782997bbdc8";
@@ -55,10 +72,18 @@ function displayWeather(city) {
   axios.get(`${apiUrl}`).then(showTemp);
 }
 
+
+let celsiusTemperature = null;
+
+
 let form = document.querySelector("#city-name");
 form.addEventListener("submit", search);
 
+let farenheitLink = document.querySelector("#farenheit");
+farenheitLink.addEventListener("click", displayfarenheit);
 
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displaycelsius);
 
 
 
