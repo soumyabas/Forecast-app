@@ -31,15 +31,35 @@ button {
 }
 
 ul {
-  text-align: right;
+  text-align: center;
   list-style-type: none;
   font-size: 17px;
+  margin: 0 auto;
+  padding: 60px 20px 60px 20px;
+  border-style: solid;
+  border-radius: 10px;
 }
+
 ul :first-letter {
   text-transform: capitalize;
 }
+
+.mainCard {
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.searchEngine {
+  text-align: right;
+  margin: 0px;
+}
+
 .weather-app {
   max-width: 1000px;
+  display: block;
+  margin: 0px auto;
 }
 
 .temp {

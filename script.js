@@ -26,8 +26,9 @@ function search(event) {
   displayWeather(currentCity.value);
 }
 
-
 function showTemp(response) {
+
+  console.log(response.data);
 
   celsiusTemperature = response.data.main.temp;
 
@@ -46,7 +47,9 @@ function showTemp(response) {
   let dateNow = document.querySelector("#date");
   dateNow.innerHTML = formatDate(response.data.dt * 1000);
 
-
+  let weatherIcon = document.querySelector("#iconNow");
+  weatherIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  weatherIcon.setAttribute("alt", response.data.weather[0].icon);
 
 }
 
@@ -68,7 +71,8 @@ function displayWeather(city) {
   let apiKey = "e12d4984bdb9b1f3003f6782997bbdc8";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
-  console.log(apiUrl);
+
+
   axios.get(`${apiUrl}`).then(showTemp);
 }
 
