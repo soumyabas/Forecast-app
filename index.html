@@ -20,23 +20,12 @@
         <div class="col-6">
           <h1 class="weather">FORECAST</h1>
         </div>
-        <div class="col-6">
-          <form id="city-name" class= "searchEngine">
-            <input type="text" placeholder="enter name of the city" autocomplete="off" autofocus="on"
-              id="search-city" />
-            <input type="submit" value="Search" />
-            <span>
-              <button id="gps-Location">
-                📌
-              </button>
-            </span>
-          </form>
-        </div>
+       
 
         <div class="row">
-          <div class="col-7">
+          <div class="col-6">
             <div class="mainCard" >
-              <div class="card-body">
+             
                 <h2 id="cityName">Denholme</h2>
                 <h5 id="date">Tuesday 15:00
                 </h5>
@@ -44,13 +33,13 @@
 
                 <div class="row">
                   <div class="class col-md-2">
-                    <img id="iconNow" src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="sunny">
+                    <img id="iconNow" class="icono" src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="sunny">
                   </div>
 
                   <div class="col-4">
                     <h1 class="temp" id="degrees">7</h1>
                   </div>
-                  <div class="col-3" id="chooseUnits" class="Weather-temperature">
+                  <div class="col-3" id="chooseUnits" class="weather-temperature">
                     <a href="#" id="celsius" class="celsius-temp">°C</a> /
                     <a href="#" id="farenheit" class="farenheit-temp">°F</a>
                   </div>
@@ -58,32 +47,36 @@
                     <h7 class="attribute" id="description"> Light cloud and sunny</h7>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
 
           <div class="col-5">
-            <div class="card-body-2">
-              <ul class= "specs">
+            <div class="cardTwo">
+          <form id="city-name" class= "searchEngine">
+            <input type="text" placeholder="enter name of the city" autocomplete="off" autofocus="on"
+              id="search-city" class = "enter"/>
+            <input type="submit" class = "searchNow" value="Search" />
+            <span>
+              <button id="gps-Location">
+                📌
+              </button>
+            </span>
+          </form>
+              <ul>
                 <li>
                   Wind: <span id="wind-speed">2</span> km/hr
                 </li>
                 <li>
                   Humidity: <span id="humidity-element"> 93</span> %
                 </li>
-                <li>
-                  Visibility: <span id="visibility-element"> okay </span>
-                </li>
               </ul>
-            </div>
-
           </div>
+        </div>
         </div>
 
         <div class="row">
-          <div class="col-6">
-            <div class="card text-white bg-primary mb-3">
-              <div class="card-body">
+          <div class="col-7"> 
+                <div class="forecastDays">
                 <div class="row">
                   <div class="col-2">
                     <h5 class="card-title">Tue</h5>
@@ -132,21 +125,21 @@
                     <h4 class="da-emoji">☁</h4>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
-          <div class="col-6">
-            <img class="mood" src="https://images.photowall.com/products/44478/sunny-sky.jpg?h=699&q=85"
-              alt="mood setter" width="400px">
+
+          <div class="col-5">
+            <img class="mood" src="https://cdn.pixabay.com/photo/2017/12/25/01/44/sun-3037838_960_720.jpg"
+              alt="mood setter" >
           </div>
         </div>
+        
       </div>
-
-    </div>
-
-    <footer><a href="https://github.com/soumyabas/Forecast-app" class="link">Open source-code</a>
-      by Soumya Basnet</footer>
+<footer><a href="https://github.com/soumyabas/Forecast-app" class="link">Open source-code</a>  by Soumya Basnet</footer>
     <script src="script.js"></script>
+    </div>
+</div>
+    
 
 </body>
 

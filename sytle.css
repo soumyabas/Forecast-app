@@ -3,11 +3,16 @@ body {
   margin: 10px;
   background-size: 100px;
 }
+.container {
+  width: 1000px;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23f7f9fa' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
 
 h1 {
   text-align: left;
-  margin: 10px;
-  padding: 10px, 10px, 10px, 10px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 10px 0px 20px;
   font-size: 50px;
   color: #e7e7e7;
 }
@@ -21,39 +26,85 @@ h5 {
 }
 
 footer {
-  text-align: left;
+  display: block;
+  margin: 20px 200px 0px 0px;
+  padding: 5px 10px 5px 10px;
+  border: solid;
+  border-radius: 8px;
+  border-color: #e7e7e7;
+  width: 300px;
 }
 
 button {
-  border-style: solid;
-  border-radius: 5px;
-  background: rgb(170, 170, 170);
+  border-style: white;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: #e7e7e7;
+  background: rgb(211, 203, 203);
+  box-shadow: #e6dddd;
 }
 
 ul {
   text-align: center;
   list-style-type: none;
-  font-size: 17px;
-  margin: 0 auto;
-  padding: 60px 20px 60px 20px;
+  font-size: 18px;
+  margin: 20px 0px 0px 0px;
+  padding: 37px 10px 37px 10px;
   border-style: solid;
   border-radius: 10px;
+  border-color: #e7e7e7;
+  width: 360px;
 }
 
 ul :first-letter {
   text-transform: capitalize;
 }
 
+.weather {
+  border: solid;
+  border-radius: 10px;
+  margin: 10px 170px 20px 0px;
+  padding: 20px, 50px, 0px, 0px;
+  background-color: rgb(255, 255, 255);
+}
+
 .mainCard {
-  margin: 0 auto;
+  margin: 0px auto;
   padding: 10px 20px 10px 20px;
   border-style: solid;
   border-radius: 10px;
+  border-color: #e7e7e7;
+}
+
+.icono {
+  display: block;
+  margin: 0px 20px 0px 0px;
+  width: 80px;
 }
 
 .searchEngine {
-  text-align: right;
+  text-align: left;
   margin: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.enter {
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 20px 0px 0px;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.searchNow {
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #e7e7e7;
+  font-size: 15px;
+  color: black;
+  margin: 0px;
+  padding: 0px, 10px, 0px, 10px;
 }
 
 .weather-app {
@@ -64,11 +115,32 @@ ul :first-letter {
 
 .temp {
   color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.forecastDays {
+  border: solid;
+  border-radius: 10px;
+  border-color: #e7e7e7;
+  margin-top: 20px;
+  text-align: center;
+  padding: 40px 20px 80px 20px;
 }
 
 .mood {
-  border-style: none;
+  border-style: solid;
   border-radius: 10px;
+  border-color: #e7e7e7;
+  display: block;
+  margin: 20px 0px 0px 0px;
+  width: 280px;
+}
+
+.weather-temperature {
+  display: block;
+  margin: 0;
+  padding: 0px 0px 12px 0px;
 }
 
 .celsius-temp {
@@ -76,6 +148,7 @@ ul :first-letter {
   font-weight: bold;
   color: black;
   font-size: 20px;
+  text-align: center;
 }
 
 .celsius-temp:hover {
