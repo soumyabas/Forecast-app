@@ -9,12 +9,39 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23f7f9fa' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-h1 {
-  text-align: left;
-  margin: 20px 0px 0px 0px;
-  padding: 0px 10px 0px 20px;
+.content-border {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #e7e7e7;
+  padding: 15px;
+  height: 100%;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+.forecastSixDays {
+  text-align: center;
+}
+.weather {
+  background-color: rgb(255, 255, 255);
   font-size: 50px;
   color: #e7e7e7;
+  border-radius: 10px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  font-size: 18px;
+  padding: 30px 0px 0px 0px;
+  border-radius: 10px;
+  border-color: #e7e7e7;
+}
+
+ul :first-letter {
+  text-transform: capitalize;
 }
 
 h2 {
@@ -23,7 +50,17 @@ h2 {
 }
 h5 {
   font-weight: medium;
+  font-size: 18px;
 }
+/*
+
+img {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  width: 70px;
+}
+*/
 
 footer {
   display: block;
@@ -35,45 +72,19 @@ footer {
   width: 300px;
 }
 
-button {
-  border-style: white;
-  border-radius: 8px;
-  border-width: 2px;
-  border-color: #e7e7e7;
-  background: rgb(211, 203, 203);
-  box-shadow: #e6dddd;
-}
-
-ul {
-  text-align: center;
-  list-style-type: none;
-  font-size: 18px;
-  margin: 20px 0px 0px 0px;
-  padding: 37px 10px 37px 10px;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: #e7e7e7;
-  width: 360px;
-}
-
-ul :first-letter {
-  text-transform: capitalize;
-}
-
-.weather {
-  border: solid;
-  border-radius: 10px;
-  margin: 10px 170px 20px 0px;
-  padding: 20px, 50px, 0px, 0px;
-  background-color: rgb(255, 255, 255);
+.btn-warning {
 }
 
 .mainCard {
-  margin: 0px auto;
-  padding: 10px 20px 10px 20px;
+  /*
+ margin: 0px auto;
+  padding: 12px 20px 12px 20px;
   border-style: solid;
   border-radius: 10px;
   border-color: #e7e7e7;
+  width: 520px;
+ */
+  text-transform: capitalize;
 }
 
 .icono {
@@ -82,11 +93,15 @@ ul :first-letter {
   width: 80px;
 }
 
-.searchEngine {
+/*
+.input {
   text-align: left;
-  margin: 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0px 7px 0px 75px;
+  width: 230px;
+  border-radius: 5px;
+  border-color: rgb(170, 170, 170);
 }
+*/
 
 .enter {
   text-align: left;
@@ -95,23 +110,30 @@ ul :first-letter {
   border-radius: 5px;
   width: 250px;
 }
+/*
 
-.searchNow {
-  border: solid;
-  border-width: 2px;
+.btn-secondary {
+  border: none;
   border-radius: 5px;
   border-color: #e7e7e7;
+  color: white;
   font-size: 15px;
   color: black;
-  margin: 0px;
-  padding: 0px, 10px, 0px, 10px;
+  transition: ease-in-out;
+  background: rgb(199, 198, 198);
+  height: 30px;
+  padding: 0px 10px 0px 10px;
+  margin: 0px 3px 0px 0px;
 }
 
+*/
+/*
 .weather-app {
   max-width: 1000px;
   display: block;
   margin: 0px auto;
 }
+*/
 
 .temp {
   color: rgb(0, 0, 0);
@@ -119,15 +141,16 @@ ul :first-letter {
   margin: 10px 0px 0px 0px;
 }
 
+/*
 .forecastDays {
   border: solid;
   border-radius: 10px;
   border-color: #e7e7e7;
-  margin-top: 20px;
-  text-align: center;
-  padding: 40px 20px 80px 20px;
+  padding: 40px 20px 40px 20px;
 }
+*/
 
+/*
 .mood {
   border-style: solid;
   border-radius: 10px;
@@ -136,6 +159,7 @@ ul :first-letter {
   margin: 20px 0px 0px 0px;
   width: 280px;
 }
+*/
 
 .weather-temperature {
   display: block;
