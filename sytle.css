@@ -25,12 +25,7 @@ h5 {
 
 footer {
   display: block;
-  margin: 20px 200px 0px 0px;
-  padding: 5px 10px 5px 10px;
-  border: solid;
-  border-radius: 8px;
-  border-color: #e7e7e7;
-  width: 300px;
+  margin-top: 10px;
 }
 .container {
   width: 1000px;
