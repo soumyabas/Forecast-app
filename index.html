@@ -19,16 +19,14 @@
       <div class="weather-app">
         <div class="row">
           <div class="col-6">
-            <div class="content-border">
-              <h1 class="weather">FORECAST</h1>
-            </div>
+            <h1 class="weather">FORECAST</h1>
           </div>
         </div>
 
         <div class="row pt-3"></div>
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-7">
             <div class="content-border">
               <div class="mainCard">
                 <h2 id="cityName">Denholme</h2>
@@ -65,24 +63,24 @@
             </div>
           </div>
 
-          <div class="col-6">
-            <div class="content-border">
-              <div>
-                <form id="city-name" class="form-inline input-group">
-                  <input
-                    type="text"
-                    placeholder="enter name of the city"
-                    autocomplete="off"
-                    autofocus="on"
-                    id="search-city"
-                    class="form-control sm-2"
-                  />
-                  <input type="submit" class="btn btn-primary" value="Search" />
+          <div class="col-5">
+            <div>
+              <form id="city-name" class="form-inline input-group">
+                <input
+                  type="text"
+                  placeholder="enter name of the city"
+                  autocomplete="off"
+                  autofocus="on"
+                  id="search-city"
+                  class="form-control sm-2"
+                />
+                <input type="submit" class="btn btn-primary" value="Search" />
 
-                  <button class="btn btn-warning sm-2" id="gps-Location">
-                    📌
-                  </button>
-                </form>
+                <button class="btn btn-warning sm-2" id="gps-Location">
+                  📌
+                </button>
+              </form>
+              <div class="content-border-ul">
                 <ul>
                   <li>Wind: <span id="wind-speed">2</span> km/hr</li>
                   <li>Humidity: <span id="humidity-element"> 93</span> %</li>
@@ -102,17 +100,13 @@
           </div>
           <div class="col-4">
             <div class="">
-              <img
-                class="img-fluid"
-                src="https://i.pinimg.com/originals/1e/0c/bf/1e0cbf3d116b53a09a72be01b995fde4.png"
-                alt="pattern"
-              />
+              <img class="img-fluid" src="forecast.png" alt="pattern" />
             </div>
           </div>
         </div>
 
         <footer>
-          <a href="https://github.com/soumyabas/Forecast-app" class="img-fluid"
+          <a href="https://github.com/soumyabas/Forecast-app" class="link"
             >Open source-code</a
           >
           by Soumya Basnet

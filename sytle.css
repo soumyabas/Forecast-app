@@ -3,6 +3,35 @@ body {
   margin: 10px;
   background-size: 100px;
 }
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+ul :first-letter {
+  text-transform: capitalize;
+}
+
+h2 {
+  text-align: left;
+  font-weight: medium;
+}
+h5 {
+  font-weight: medium;
+  font-size: 18px;
+}
+
+footer {
+  display: block;
+  margin: 20px 200px 0px 0px;
+  padding: 5px 10px 5px 10px;
+  border: solid;
+  border-radius: 8px;
+  border-color: #e7e7e7;
+  width: 300px;
+}
 .container {
   width: 1000px;
   background-color: #ffffff;
@@ -21,150 +50,42 @@ body {
   border-radius: 10px;
 }
 
-.forecastSixDays {
-  text-align: center;
-}
 .weather {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #e7e7e7;
+  width: 300px;
   background-color: rgb(255, 255, 255);
   font-size: 50px;
   color: #e7e7e7;
   border-radius: 10px;
+  padding: 0px 0px 0px 10px;
 }
 
-ul {
-  text-align: center;
-  list-style-type: none;
-  font-size: 18px;
-  padding: 30px 0px 0px 0px;
+.content-border-ul {
+  margin-top: 20px;
+  padding: 30px 10px 20px 10px;
+  border-style: solid;
   border-radius: 10px;
   border-color: #e7e7e7;
+  width: 100%;
 }
-
-ul :first-letter {
-  text-transform: capitalize;
-}
-
-h2 {
-  text-align: left;
-  font-weight: medium;
-}
-h5 {
-  font-weight: medium;
-  font-size: 18px;
-}
-/*
-
-img {
-  display: block;
-  margin: 0px;
-  padding: 0px;
-  width: 70px;
-}
-*/
-
-footer {
-  display: block;
-  margin: 20px 200px 0px 0px;
-  padding: 5px 10px 5px 10px;
-  border: solid;
-  border-radius: 8px;
-  border-color: #e7e7e7;
-  width: 300px;
-}
-
-.btn-warning {
-}
-
 .mainCard {
-  /*
- margin: 0px auto;
-  padding: 12px 20px 12px 20px;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: #e7e7e7;
-  width: 520px;
- */
   text-transform: capitalize;
 }
-
-.icono {
-  display: block;
-  margin: 0px 20px 0px 0px;
-  width: 80px;
+.form-control {
+  border-radius: 7px;
+  margin-right: 10px;
 }
-
-/*
-.input {
-  text-align: left;
-  margin: 0px 7px 0px 75px;
-  width: 230px;
-  border-radius: 5px;
-  border-color: rgb(170, 170, 170);
-}
-*/
-
-.enter {
-  text-align: left;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 20px 0px 0px;
-  border-radius: 5px;
-  width: 250px;
-}
-/*
-
-.btn-secondary {
+.btn-primary {
   border: none;
-  border-radius: 5px;
-  border-color: #e7e7e7;
-  color: white;
-  font-size: 15px;
-  color: black;
-  transition: ease-in-out;
-  background: rgb(199, 198, 198);
-  height: 30px;
-  padding: 0px 10px 0px 10px;
-  margin: 0px 3px 0px 0px;
+  border-radius: 3px;
+  background: rgb(255, 187, 0);
+  margin-right: 10px;
 }
-
-*/
-/*
-.weather-app {
-  max-width: 1000px;
-  display: block;
-  margin: 0px auto;
-}
-*/
-
-.temp {
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin: 10px 0px 0px 0px;
-}
-
-/*
-.forecastDays {
-  border: solid;
-  border-radius: 10px;
-  border-color: #e7e7e7;
-  padding: 40px 20px 40px 20px;
-}
-*/
-
-/*
-.mood {
-  border-style: solid;
-  border-radius: 10px;
-  border-color: #e7e7e7;
-  display: block;
-  margin: 20px 0px 0px 0px;
-  width: 280px;
-}
-*/
-
-.weather-temperature {
-  display: block;
-  margin: 0;
-  padding: 0px 0px 12px 0px;
+.btn-warning {
+  background: #e7e7e7;
+  border: none;
 }
 
 .celsius-temp {
@@ -193,4 +114,8 @@ footer {
 .link {
   font-style: italic;
   font-weight: medium;
+}
+
+.forecastSixDays {
+  padding: 50px 0px 0px 20px;
 }
